@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: hello-knative
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: ttl.sh/hello-knative:1h

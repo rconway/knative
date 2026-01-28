@@ -1,0 +1,13 @@
+# $schema: https://raw.githubusercontent.com/knative/func/92d04e4f/schema/func_yaml-schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/knative/func/92d04e4f/schema/func_yaml-schema.json
+specVersion: 0.36.0
+name: hello
+runtime: go
+registry: docker.io/rconway
+namespace: default
+created: 2025-10-28T15:56:30.010185091Z
+build:
+  builder: pack
+deploy:
+  namespace: default
+  image: index.docker.io/rconway/hello@sha256:a5c50e549c9a9708bfbe9cfcfbdbd1b7bc8788f54d422c383b71bc3dc6ca0a18
